@@ -19,7 +19,7 @@ class AgentMap extends React.PureComponent {
 
   componentDidMount() {
     let googleScript = document.createElement('script');
-    googleScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6TxY2g"
+    googleScript.src = "https://maps.googleapis.com/maps/api/js?key=xxxAIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6TxY2g"
     googleScript.async = true
     window.document.body.appendChild(googleScript)
     googleScript.addEventListener('load', this.initMap)

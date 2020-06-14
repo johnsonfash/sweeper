@@ -52,7 +52,7 @@ class CustomerMap extends React.PureComponent {
 
   componentDidMount() {
     let googleScript = document.createElement('script');
-    googleScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6TxY2g&libraries=places"
+    googleScript.src = "https://maps.googleapis.com/maps/api/js?key=xxxAIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6TxY2g&libraries=places"
     googleScript.async = true
     window.document.body.appendChild(googleScript)
     googleScript.addEventListener('load', this.initAutocomplete)
@@ -61,7 +61,7 @@ class CustomerMap extends React.PureComponent {
   initAutocomplete() {
     let mapToState = this.handleMapChange
     let myLatlng = { lat: 6.60954222424663, lng: 3.370920970651687 };
-    infoWindow = new google.maps.InfoWindow;
+    infoWindow = new google.maps.InfoWindow();
     map = new google.maps.Map(this.googleMapRef.current, {
       center: myLatlng,
       zoom: 10,
@@ -128,7 +128,7 @@ class CustomerMap extends React.PureComponent {
     // more details for that place.
     searchBox.addListener('places_changed', function () {
       var places = searchBox.getPlaces();
-      if (places.length == 0) {
+      if (places.length === 0) {
         return;
       }
       mapToState(places[0].formatted_address)
@@ -169,7 +169,7 @@ class CustomerMap extends React.PureComponent {
     });
 
     function geoCode(latitudeLogitude) {
-      let geocoder = new google.maps.Geocoder;
+      let geocoder = new google.maps.Geocoder();
       geocoder.geocode({ 'location': latitudeLogitude }, function (results, status) {
         if (status === 'OK') {
           if (results[0]) {

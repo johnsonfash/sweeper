@@ -126,17 +126,22 @@
 
 .order_content .bag-head::after,
 .order_content .total::after,
-.order_content .bag-total::before,
-.order_content p.description-text {
+.order_content .bag-total::before {
     margin: 0.5em 0;
     font-size: 1.2em;
 }
 
+.order_content p.description-text {
+  font-size: 1.1em;
+  line-height: 1.2;
+  margin: 0.5em 0;
+  color: rgb(73, 73, 73);
+}
 .order_content .bag-head::after,
 .order_content .bag-total::before {
     content: "";
     width: 100%;
-    height: 3px;
+    height: 0.2em;
 }
 
 
@@ -149,8 +154,9 @@
 }
 
 .order_content .h1 {
-  display: block;
-    font-size: 1.8em;
+    display: block;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    font-size: 1.7em;
     padding: 0;
     margin: 0;
 }
@@ -176,7 +182,7 @@ p {
     display: block;
     margin: auto;
     max-width: 100%;
-    max-height: 20em;
+    max-height: 16em;
 }
 
 .order_content .description {
@@ -194,11 +200,7 @@ p {
 
 .order_content .btn-remove {
     width: 5.3em;
-    margin-left: 2em;
-}
-
-.order_content .incremento {
-    /* margin-left: 1.5em; */
+    margin-left: 3em;
 }
 
 
@@ -228,21 +230,6 @@ p {
   margin: 1.2em 0 0 0;
 }
 
-.order_content .quantity-wrapper .date {
-    width: 10em;
-    margin:0 0 0 1em;
-    padding: 0 0 0 0.5em;
-    font-size: 1.2em;
-    border-radius: 0.3em;
-    /* height: 1.5em; */
-    outline: none;
-	  border: 0.1em solid var(--historyBackground);
-}
-
-.order_content .quantity-wrapper .date:hover {
-  background-color: var(--historyBackground);
-  color: white;
-}
 
 .order_content .btn-remove:active,
 .order_content .incremento button:active {
@@ -260,13 +247,13 @@ p {
 
 .order_content .subtotal p,
 .order_content .delivery p{
-    margin: 0em 1em 0.5em 1em;
+    margin: 0em 0em 0.5em 0em;
     font-size: 1.2em;
     font-weight: 500;
 }
 
 .order_content .total {
-    margin: 1.5em 1em;
+    margin: 1.5em 0em;
 }
 
 .order_content .btn-go-checkout {
@@ -285,18 +272,13 @@ p {
 }
 
 @media screen and (max-width: 640px){
-  .order_content .btn-remove {
-    width: 4em;
-    margin-left: 1em;
-}
-
-.order_content .incremento {
-    margin-left: 1em;
-}
-
+  /* .order_content .btn-remove {
+    width: 5em;
+    margin-left: 3em;
+} */
 .order_content .incremento .but {
     width: 2.5em;
-    margin-right: 0.2em;
+    margin-right: 0.5em;
     border-radius: 50%;
     padding: 0;
 }
@@ -416,7 +398,7 @@ p {
 }
 /* THIS IS FOR ACCOUNT */
 
-@media screen and (max-width: 29em){
+@media screen and (max-width: 30em){
   .order_content .bag-product {
     display: block;
     position: relative;
@@ -442,7 +424,15 @@ p {
     display: block;
     width: 100%;
 }
+.order_content .invinsible_hr {
+  display: block;
+  height: 0.2em;
+  margin: 0.5em 0;
+  background: rgb(238, 238, 238);
 
+  /* background-color: whitesmoke; */
+  width: 100%;
+}
 
 }
 

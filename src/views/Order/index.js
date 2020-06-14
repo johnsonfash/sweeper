@@ -21,27 +21,22 @@ class Order extends Component {
               </div>
               <div className="description">
                 <p className="muted">Order code: SS022592000</p>
+                <span className="invinsible_hr"></span>
                 <span className="h1">Waste Bag Pickup</span>
                 <p className="blur">Type: Standard plastic bag</p>
                 <p className="description-text">Select quantity according to plastic bag in description.</p>
                 <p className="blur">Bag size: 0.5m x 0.5m</p>
                 <span className="h1">₦825.00</span>
                 <div className="quantity-wrapper">
-                  <div>
+                  <div className="increase_wrapper">
                     <span className="incremento">
-                      <button type="button" name="button" className="but"><span role="img" aria-label="sheep">&#10133;</span></button>
+                      <button type="button" name="button" className="but"><span role="img" aria-label="minus"> &#10134;</span></button>
                   <label htmlFor="quantity"></label>
                   <Input type="text" id="quantity" maxLength="3" name="location" className="quantity"/>
-                      <button type="button" name="button" className="but"><span role="img" aria-label="sheep"> &#10134;</span></button>
+                      <button type="button" name="button" className="but"><span role="img" aria-label="plus"> &#10133;</span></button>
                     </span>
                   </div>
                   <button className="btn-remove uppercase">&#128465; del</button>
-                </div>
-                <div className="quantity-wrapper">
-                  <div>
-                    <label htmlFor="time" className="h2">Date:</label>
-                    <input type="date" id="time" max="2030-12-30" min="2020-01-01" pattern="\d{4}-\d{2}-\d{2}" className="date"/>
-                  </div>
                 </div>
               </div>
             </div>

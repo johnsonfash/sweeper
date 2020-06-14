@@ -1,7 +1,7 @@
 // import React from 'react';
 import Order from './views/Order'
-// import CustomerMap from './views/Map/CustomerMap'
-import AgentMAp from './views/Map/AgentMAp'
+import CustomerMap from './views/Map/CustomerMap'
+// import AgentMAp from './views/Map/AgentMAp'
 import Summary from './views/Order/Summary'
 import Address from './views/Order/Address'
 import Community from './views/Community'
@@ -22,7 +22,7 @@ const routes = [
   { path: '/account', exact: true, name: 'Account', component: Account },
   { path: '/community', exact: true, name: 'Community', component: Community },
   { path: '/history', exact: true, name: 'History', component: History },
-  { path: '/account/address', exact: true, name: 'Map', component: AgentMAp },
+  { path: '/account/address', exact: true, name: 'Map', component: CustomerMap },
   { path: '/', exact: false, name: 'Home', component: Page404 }
 ];
 
