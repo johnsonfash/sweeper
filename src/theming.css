@@ -883,7 +883,7 @@ p {
   width: 100%;
 }
 .payment_form {
-  width: 95%;
+  width: 100%;
   height: 21em;
   padding: 0em 1em 1em 1em;
   margin: 1em auto;
@@ -937,7 +937,7 @@ p {
 }
 
 .payment_form .cardNumber .input, .payment_form .amountElement .input, .payment_form .exp .expiry, .payment_form .cvs .cv {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 500;
   padding: 0em 0em 0em 2.4em;
   width: 99%;
@@ -967,7 +967,7 @@ p {
   background: whitesmoke;
 } */
 .history {
-  width: 95%;
+  width: 100%;
   margin: 1em auto 3em auto;
 }
 
@@ -1011,7 +1011,7 @@ p {
   min-width: 5em;
   position: absolute;
   left: 0;
-  top: 1.5em;
+  top: 0.5em;
   line-height: 1.5;
   box-sizing: border-box;
   padding: 1em 0.8em;
@@ -1037,17 +1037,18 @@ p {
 
 .history .activity{
   position: relative;
-  padding: 0.1em 0em 1em 1em;
+  padding: 0.1em 0em 0.3em 1em;
   border-radius: 2px;
-  line-height: 1.5;
+  line-height: 1.3;
   border-left: 0.2em solid var(--historyBackground);
   box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .12);
   background-color: white;
 }
 
 .history .title {
-  font-size: 1.7em;
-  font-weight: 700;
+  font-size: 1.4em;
+  /* font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif; */
+  font-weight: 600;
 }
 
 .history .description {
@@ -1057,7 +1058,7 @@ p {
 }
 
 .history .update {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .history .update .confirmed {

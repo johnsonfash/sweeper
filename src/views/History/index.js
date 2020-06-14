@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import { Input, Row, FormGroup } from 'reactstrap';
 
 class History extends Component {
   render() {
     return (
       <React.Fragment>
+        <Row>
         <div className="history">
           <div className="timeline">
             <div className="history_box">
@@ -97,6 +99,7 @@ class History extends Component {
             </div>
           </div>
         </div>
+        </Row>
       </React.Fragment>
     )
   }
