@@ -35,6 +35,7 @@ class Community extends Component {
 
   render() {
     let { loading, error, errorMessage, communityData } = this.props.communityData
+    console.log(communityData)
     let u;
     let button;
     switch (isAuthUserType()){

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input, Row, FormGroup } from 'reactstrap';
+import { Row } from 'reactstrap';
 
 class History extends Component {
   render() {

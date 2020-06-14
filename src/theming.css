@@ -386,9 +386,17 @@ p {
 /* THIS IS FOR ACCOUNT */
 
 .order_content .account_icon {
-  display: block;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   width: 10%;
+}
+.order_content .account_icon span {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 5em;
+  text-align: center;
 }
 .order_content .account_detail {
   display: block;
@@ -396,14 +404,49 @@ p {
   width: 90%;
   padding-left: 1em;
 }
-/* THIS IS FOR ACCOUNT */
 
+.order_content .personal_wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.order_content .personal_one {
+  width: 35%;
+}
+.order_content .personal_two {
+  width: 60%;
+}
+
+/* THIS IS FOR ACCOUNT IMAGE */
+
+
+/* THIS IS FOR ACCOUNT IMAGE */
+
+
+
+/* THIS IS FOR ACCOUNT */
+@media screen and (max-width: 50em){
+  .order_content .account_icon span {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 36em){
+  .order_content .account_icon span {
+    font-size: 3em;
+  }
+}
 @media screen and (max-width: 30em){
   .order_content .bag-product {
     display: block;
     position: relative;
   }
 
+  .order_content .account_icon span {
+    font-size: 2.4em;
+  }
   .order_content .muted {
     text-align: center;
   }
@@ -1296,6 +1339,10 @@ p {
   }
 }
 /* THIS IS FOR AGENT MAP */
+
+
+
+
 
 
 /* THIS IS FOR PAYMENT IN VIEW.JS */
