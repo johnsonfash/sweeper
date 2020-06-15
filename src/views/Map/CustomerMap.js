@@ -52,7 +52,8 @@ class CustomerMap extends React.PureComponent {
 
   componentDidMount() {
     let googleScript = document.createElement('script');
-    googleScript.src = "https://maps.googleapis.com/maps/api/js?key=xxxAIzaSyBKHdFymwu91lTBTQBDgltrFaXPD6TxY2g&libraries=places"
+    //API key invalid, add urs or contact @johnerry
+    googleScript.src = "https://maps.googleapis.com/maps/api/js?key=AIzatSyBKHtdFymwut91lTBTQBDgltrFaXPD6TxY2g&libraries=places"
     googleScript.async = true
     window.document.body.appendChild(googleScript)
     googleScript.addEventListener('load', this.initAutocomplete)
